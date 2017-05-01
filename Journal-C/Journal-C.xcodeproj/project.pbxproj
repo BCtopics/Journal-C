@@ -13,6 +13,7 @@
 		6BC90C591EB7D18900A6F296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC90C581EB7D18900A6F296 /* Assets.xcassets */; };
 		6BC90C5C1EB7D18900A6F296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC90C5A1EB7D18900A6F296 /* LaunchScreen.storyboard */; };
 		6BC90C691EB7D20200A6F296 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC90C681EB7D20200A6F296 /* Entry.m */; };
+		6BC90C6C1EB7D40100A6F296 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC90C6B1EB7D40100A6F296 /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6BC90C5D1EB7D18900A6F296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BC90C671EB7D20200A6F296 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		6BC90C681EB7D20200A6F296 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		6BC90C6A1EB7D40100A6F296 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		6BC90C6B1EB7D40100A6F296 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		6BC90C661EB7D1F100A6F296 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6BC90C6A1EB7D40100A6F296 /* EntryController.h */,
+				6BC90C6B1EB7D40100A6F296 /* EntryController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			files = (
 				6BC90C691EB7D20200A6F296 /* Entry.m in Sources */,
 				6BC90C511EB7D18900A6F296 /* AppDelegate.m in Sources */,
+				6BC90C6C1EB7D40100A6F296 /* EntryController.m in Sources */,
 				6BC90C4E1EB7D18900A6F296 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
