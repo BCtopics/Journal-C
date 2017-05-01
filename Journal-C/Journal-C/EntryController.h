@@ -18,11 +18,7 @@
 + (EntryController *)sharedInstance;
 - (instancetype)init;
 
-
-
-
-
-
+- (void)saveToPersistentStorage;
 
 @property (nonatomic, strong, readonly) NSArray *entries;
 

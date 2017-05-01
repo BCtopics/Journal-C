@@ -60,17 +60,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-gb-Fyb">
-                                <rect key="frame" x="139" y="71" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="PZn-oN-UHZ" id="uSu-kv-di3"/>
-                                </connections>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gW-C6-NMO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gW-C6-NMO">
                                 <rect key="frame" x="16" y="137" width="343" height="429"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -87,15 +77,28 @@
                                     <action selector="clearButtonTapped:" destination="PZn-oN-UHZ" eventType="touchUpInside" id="GWh-4Q-ktk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-gb-Fyb">
+                                <rect key="frame" x="16" y="82" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PZn-oN-UHZ" id="uSu-kv-di3"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kxo-RZ-j4P" firstAttribute="top" secondItem="o3e-Wd-WcN" secondAttribute="bottom" id="D4N-8c-buO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mfb-gb-Fyb" secondAttribute="trailing" id="MxQ-WM-Ab5"/>
+                            <constraint firstItem="Mfb-gb-Fyb" firstAttribute="top" secondItem="Sd9-ke-2mB" secondAttribute="bottom" constant="18" id="OJB-ae-FbZ"/>
                             <constraint firstItem="5gW-C6-NMO" firstAttribute="leading" secondItem="zfc-eT-cTd" secondAttribute="leadingMargin" id="PM3-AG-rv0"/>
                             <constraint firstItem="o3e-Wd-WcN" firstAttribute="top" secondItem="5gW-C6-NMO" secondAttribute="bottom" constant="51" id="Xd1-dV-4bK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5gW-C6-NMO" secondAttribute="trailing" id="cNa-Hm-GiE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o3e-Wd-WcN" secondAttribute="trailing" id="iMD-8r-idI"/>
                             <constraint firstItem="o3e-Wd-WcN" firstAttribute="leading" secondItem="zfc-eT-cTd" secondAttribute="leadingMargin" id="kH8-gE-xpa"/>
+                            <constraint firstItem="Mfb-gb-Fyb" firstAttribute="leading" secondItem="zfc-eT-cTd" secondAttribute="leadingMargin" id="rcS-Yg-F69"/>
+                            <constraint firstItem="5gW-C6-NMO" firstAttribute="top" secondItem="Mfb-gb-Fyb" secondAttribute="bottom" constant="25" id="wCh-8w-6Sv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Z5T-K5-L3M">

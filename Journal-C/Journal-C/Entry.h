@@ -12,6 +12,9 @@
 
 - (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText timestamp:(NSDate *)timestamp;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)dictionaryRepresentation;
+
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *bodyText;
 @property (nonatomic, copy) NSDate *timestamp;

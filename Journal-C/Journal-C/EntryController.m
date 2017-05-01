@@ -8,6 +8,8 @@
 
 #import "EntryController.h"
 
+static NSString * const kEntries = @"entries";
+
 @interface EntryController()
 
 @property (nonatomic, strong) NSMutableArray *internalEntries;
@@ -21,6 +23,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [EntryController new];
+        [sharedInstance loadFromPersistentStorage];
     });
     return sharedInstance;
 }
@@ -37,11 +40,34 @@
 - (void)addEntry:(Entry *)entry
 {
     [self.internalEntries addObject:entry];
+    [self saveToPersistentStorage];
 }
 
 - (void)removeEntry:(Entry *)entry
 {
     [self.internalEntries removeObject:entry];
+    [self saveToPersistentStorage];
+}
+
+
+- (void)saveToPersistentStorage
+{
+    NSMutableArray *entryDictionaries = [NSMutableArray new];
+    
+    for (Entry *entry in self.entries) {
+        [entryDictionaries addObject:entry.dictionaryRepresentation];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:entryDictionaries forKey:kEntries];
+}
+
+- (void)loadFromPersistentStorage
+{
+    NSArray *entryDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:kEntries];
+    for (NSDictionary *dictionary in entryDictionaries) {
+        Entry *entry = [[Entry alloc] initWithDictionary:dictionary];
+        [self addEntry:entry];
+    }
 }
 
 #pragma mark - Properties
