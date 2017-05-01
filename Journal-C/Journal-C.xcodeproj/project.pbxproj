@@ -14,6 +14,7 @@
 		6BC90C5C1EB7D18900A6F296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC90C5A1EB7D18900A6F296 /* LaunchScreen.storyboard */; };
 		6BC90C691EB7D20200A6F296 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC90C681EB7D20200A6F296 /* Entry.m */; };
 		6BC90C6C1EB7D40100A6F296 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC90C6B1EB7D40100A6F296 /* EntryController.m */; };
+		6BC90C6F1EB7D7A400A6F296 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC90C6E1EB7D7A400A6F296 /* EntryListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		6BC90C681EB7D20200A6F296 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		6BC90C6A1EB7D40100A6F296 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		6BC90C6B1EB7D40100A6F296 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		6BC90C6D1EB7D7A400A6F296 /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		6BC90C6E1EB7D7A400A6F296 /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				6BC90C551EB7D18900A6F296 /* Main.storyboard */,
+				6BC90C6D1EB7D7A400A6F296 /* EntryListTableViewController.h */,
+				6BC90C6E1EB7D7A400A6F296 /* EntryListTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				6BC90C511EB7D18900A6F296 /* AppDelegate.m in Sources */,
 				6BC90C6C1EB7D40100A6F296 /* EntryController.m in Sources */,
 				6BC90C4E1EB7D18900A6F296 /* main.m in Sources */,
+				6BC90C6F1EB7D7A400A6F296 /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
